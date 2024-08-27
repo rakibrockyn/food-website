@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "start": "vite",
+    "build": "tailwindcss -i style.css -o ./css/style.css --minify",
+    "watch": "tailwindcss -i style.css -o ./css/style.css --watch",
+    "dev": "vite build"
   },
   "keywords": [],
   "author": "",
